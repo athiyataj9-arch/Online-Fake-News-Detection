@@ -1,6 +1,4 @@
-# =============================
 # Fake News Detection Project
-# =============================
 
 import pandas as pd
 import numpy as np
@@ -17,18 +15,16 @@ from sklearn.metrics import (
     classification_report
 )
 
-# =============================
 # Load Dataset
-# =============================
+
 df = pd.read_csv("Fake.csv")   # change path if required
 
 print("Dataset Loaded Successfully")
 print(df.head())
 print(df.info())
 
-# =============================
 # Data Cleaning
-# =============================
+
 def clean_text(text):
     text = text.lower()
     text = re.sub(r"http\S+", "", text)
@@ -40,9 +36,9 @@ df["text"] = df["text"].apply(clean_text)
 # Map labels
 df["label"] = df["label"].map({"FAKE": 0, "REAL": 1})
 
-# =============================
+
 # Visualization 1: Class Distribution
-# =============================
+
 plt.figure()
 df["label"].value_counts().plot(kind="bar")
 plt.title("Class Distribution (Fake vs Real News)")
@@ -50,9 +46,9 @@ plt.xlabel("Label (0 = Fake, 1 = Real)")
 plt.ylabel("Count")
 plt.show()
 
-# =============================
+
 # Visualization 2: Text Length Distribution
-# =============================
+
 df["text_length"] = df["text"].apply(len)
 
 plt.figure()
@@ -62,9 +58,9 @@ plt.xlabel("Text Length")
 plt.ylabel("Frequency")
 plt.show()
 
-# =============================
+
 # Train-Test Split
-# =============================
+
 X = df["text"]
 y = df["label"]
 
@@ -72,9 +68,9 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-# =============================
+
 # TF-IDF Vectorization
-# =============================
+
 vectorizer = TfidfVectorizer(
     stop_words="english",
     max_df=0.7,
@@ -84,29 +80,28 @@ vectorizer = TfidfVectorizer(
 X_train_tfidf = vectorizer.fit_transform(X_train)
 X_test_tfidf = vectorizer.transform(X_test)
 
-# =============================
+
 # Model Training
-# =============================
+
 model = LogisticRegression(max_iter=1000)
 model.fit(X_train_tfidf, y_train)
 
-# =============================
 # Predictions
-# =============================
+
 y_pred = model.predict(X_test_tfidf)
 
-# =============================
+
 # Evaluation Metrics
-# =============================
+
 accuracy = accuracy_score(y_test, y_pred)
 print("\nModel Accuracy:", accuracy)
 
 print("\nClassification Report:\n")
 print(classification_report(y_test, y_pred))
 
-# =============================
+
 # Visualization 3: Confusion Matrix
-# =============================
+
 cm = confusion_matrix(y_test, y_pred)
 
 plt.figure()
@@ -116,9 +111,9 @@ plt.ylabel("Actual Label")
 plt.title("Confusion Matrix")
 plt.show()
 
-# =============================
+
 # Visualization 4: Important Words (TF-IDF)
-# =============================
+
 feature_names = vectorizer.get_feature_names_out()
 coefficients = model.coef_[0]
 
