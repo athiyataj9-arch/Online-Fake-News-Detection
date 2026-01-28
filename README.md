@@ -32,27 +32,26 @@ The model is trained on labeled news data and applies **Natural Language Process
 Online_Fake_News_Detection/
 │
 ├── Online_Fake_News_Detection.ipynb
-│   └── Main Jupyter Notebook
+│ └── Main Jupyter Notebook
 │
 ├── dataset/
-│   └── news_data.csv
-│       └── Labeled news dataset
+│ └── news_data.csv
+│ └── Labeled news dataset
 │
 ├── fake_news_file.py
-│   └── Model training script
+│ └── Model training script
 │
 ├── fake_news_model.pkl
-│   └── Trained machine learning model
+│ └── Trained machine learning model
 │
 ├── tfidf_vectorizer.pkl
-│   └── Saved TF-IDF vectorizer
+│ └── Saved TF-IDF vectorizer
 │
 ├── requirements.txt
-│   └── Project dependencies
+│ └── Project dependencies
 │
 └── README.md
-    └── Project documentation
-
+└── Project documentation
 ## ⚙️ Methodology
 
 1. **Data Collection** – Load and explore labeled news datasets (`Fake.csv` and `True.csv`)  
