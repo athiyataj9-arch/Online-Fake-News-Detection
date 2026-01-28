@@ -71,16 +71,6 @@ The model is trained on labeled news data and applies **Natural Language Process
 
 ---
 
-## 🖼️ Project Demo / Screenshot
-
-Add a screenshot of your notebook output, model results, or dashboard to make it visually appealing:
-
-
-yaml
-Copy code
-
----
-
 🚀 How to Run the Project
 - Clone the repository:
   git clone https://github.com/your-username/online-fake-news-detection.git
