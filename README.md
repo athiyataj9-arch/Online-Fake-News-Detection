@@ -84,32 +84,23 @@ Copy code
 
 ---
 
-## 🚀 How to Run the Project
-
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/online-fake-news-detection.git
-
-Navigate to the project directory:
-cd online-fake-news-detection
-
-Install required dependencies:
-pip install -r requirements.txt
-
-Open and run the notebook:
-jupyter notebook Online_Fake_News_Detection.ipynb
-
-Or run the model script directly:
-python fake_news_file.py
+🚀 How to Run the Project
+- Clone the repository:
+  git clone https://github.com/your-username/online-fake-news-detection.git
+- Navigate to the project directory:
+  cd online-fake-news-detection
+- Install required dependencies:
+  pip install -r requirements.txt
+- Open and run the notebook:
+  jupyter notebook Online_Fake_News_Detection.ipynb
+- Or run the model script directly:
+  python fake_news_file.py
 
 🔮 Future Enhancements
-Deploy the model as a web application using Streamlit or FastAPI
-
-Improve accuracy using deep learning models such as LSTM or BERT
-
-Add support for real-time news URL analysis
-
-Integrate a user interface for uploading news text or URLs
+- Deploy the model as a web application using Streamlit or FastAPI
+- Improve accuracy using deep learning models such as LSTM or BERT
+- Add support for real-time news URL analysis
+- Integrate a user interface for uploading news text or URLs
 
 📜 License
-This project is for educational and learning purposes.  
+- This project is for educational and learning purposes.
