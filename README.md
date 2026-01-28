@@ -31,11 +31,17 @@ The model is trained on labeled news data and applies **Natural Language Process
 📂 Project Structure
 Online_Fake_News_Detection/
 │─ Online_Fake_News_Detection.ipynb
+
 │─ fake_news_file.py
+
 │─ fake_news_model.pkl
+
 │─ tfidf_vectorizer.pkl
+
 │─ requirements.txt
+
 │─ README.md
+
 └─ dataset/
     └─ news_data.csv
 
