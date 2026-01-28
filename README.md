@@ -87,29 +87,21 @@ Copy code
 ## 🚀 How to Run the Project
 
 1. Clone the repository:
-
 ```bash
 git clone https://github.com/your-username/online-fake-news-detection.git
+
 Navigate to the project directory:
-
-bash
-Copy code
 cd online-fake-news-detection
+
 Install required dependencies:
-
-bash
-Copy code
 pip install -r requirements.txt
+
 Open and run the notebook:
-
-bash
-Copy code
 jupyter notebook Online_Fake_News_Detection.ipynb
-Or run the model script directly:
 
-bash
-Copy code
+Or run the model script directly:
 python fake_news_file.py
+
 🔮 Future Enhancements
 Deploy the model as a web application using Streamlit or FastAPI
 
@@ -120,21 +112,4 @@ Add support for real-time news URL analysis
 Integrate a user interface for uploading news text or URLs
 
 📜 License
-This project is for educational and learning purposes.
-
-yaml
-Copy code
-
----
-
-This is a **single, ready-to-copy README.md** file:  
-
-- ✅ All sections included  
-- ✅ Professional tone  
-- ✅ Markdown headings, bolds, and bullets preserved  
-- ✅ Metrics table placeholder included  
-- ✅ Demo screenshot placeholder included  
-
----
-
-If you want, I can also make a **“next-level pro version”** of this README with **GitHub badges, color emojis, and visually separated sections** so your repo **looks like a premium portfolio project**.  
+This project is for educational and learning purposes.  
