@@ -29,29 +29,19 @@ The model is trained on labeled news data and applies **Natural Language Process
 ---
 
 ## 📂 Project Structure
-Online_Fake_News_Detection/
+1. **Online_Fake_News_Detection.ipynb** – Main Jupyter Notebook  
 
-├── Online_Fake_News_Detection.ipynb
-│ └── Main Jupyter Notebook
+2. **dataset/news_data.csv** – Labeled news dataset  
 
-├── dataset/
-│ └── news_data.csv
-│ └── Labeled news dataset
+3. **fake_news_file.py** – Model training script  
 
-├── fake_news_file.py
-│ └── Model training script
+4. **fake_news_model.pkl** – Trained machine learning model  
 
-├── fake_news_model.pkl
-│ └── Trained machine learning model
+5. **tfidf_vectorizer.pkl** – Saved TF-IDF vectorizer  
 
-├── tfidf_vectorizer.pkl
-│ └── Saved TF-IDF vectorizer
+6. **requirements.txt** – Project dependencies  
 
-├── requirements.txt
-│ └── Project dependencies
-
-└── README.md
-└── Project documentation
+7. **README.md** – Project documentation  
 
 ## ⚙️ Methodology
 
